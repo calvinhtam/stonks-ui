@@ -1,57 +1,15 @@
 # Marshall Wace UI Developer technical test
 
-## Available Scripts
+## Next steps
 
-In the project directory, you can run:
+Congratulations! You've completed the test.
 
-### `npm start`
+If you have any feedback on the test itself that you would like the dev team to see (or if you feel there is anything you need to explain about your solution), make sure to save that in [FEEDBACK.md](./FEEDBACK.md) before proceeding. This is totally optional, so feel free to leave this file blank.
 
-Runs the app in the development mode.\
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+You can submit your test solution as follows:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Run `npm pack` within the project directory. This will create a file named `mw-ui-challenge-v1.0.0.tgz` that includes the contents of the `src` and `public` folders.
 
-### `npm test`
+2. Upload the resulting `mw-ui-challenge-v1.0.0.tgz` file to the link contained in the email you received.
 
-Launches the Vitest test runner in the interactive watch mode.\
-More information on the test setup can be found in the Vitest [documentation](https://vitest.dev/guide/).
-
----
-
-## Part 3: React integration
-
-This section involves integrating your list filtering/sorting solution from the previous step into the React widget that you've styled up.
-
-The app structure is already in place; your task is to add the functionality described in bullet points below:
-
-### Filtering results based on user input
-
-The `PositionGrid` component renders a list of positions passed into its `positions` prop, and the `SearchInput` is intended to allow the user to type in their search string.
-
-You will need to add the filtering behaviour so that the grid results are filtered based on the user's search string.
-
-- The existing `SearchInput` component currently isn't hooked up to filter the grid. You'll need to address this.
-- You can perform the filtering using the `createTransform` function that you wrote in the previous step
-
-### Performance optimisation and testing
-
-- We're keen to assess your understanding of how to write performant React components. Assume your solution will be used as part of a complex UI, making sure that your decisions will not impact the rendering performance of other components due to unnecessary re-renders.
-- Add some unit tests to [`SearchInput.test.tsx`](./src/components/SearchInput.test.tsx) to cover the basic behaviour of the search input component.
-
-### Additional notes
-
-- For any performance optimisations, it's safe to assume that individual `Position` objects are immutable
-- [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) is installed in the project dependencies to simplify testing components (see [`SearchInput.test.tsx`](./src/components/SearchInput.test.tsx) for a usage example)
-- Your unit tests for the search input component should verify the general functionality for that component, but don't worry about unlikely edge cases / 100% test coverage etc.
-- There's no need to add any integration/end-to-end tests; you can assume all the other components apart from `SearchInput` have been tested separately
-
----
-
-Once you are happy with your answer, run the following commands to update this `README.md` for the next step:
-
-```
-git add .
-git commit --allow-empty -m "End of part 3"
-git cherry-pick submit --strategy-option=theirs
-```
+Thanks for taking part, and make sure to let us know if there's anything that we can improve!
