@@ -11,3 +11,117 @@ body {
 main {
   width: 320px;
 }
+
+/* Colors */
+@property --base-light1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #ffffff;
+}
+@property --base-light2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: rgba(255, 255, 255, 0.05);
+}
+@property --base-grey1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #ffeacc;
+}
+@property --base-dark1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #1D1D1D;
+}
+@property --base-dark2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: rgba(0, 0, 0, 0.8);
+}
+@property --base-blue1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #06deff;
+}
+@property --base-orange1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #f2b032;
+}
+
+/* Opacity */
+@property --focus-lvl1 {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.5;
+}
+@property --focus-lvl2 {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.6;
+}
+@property --focus-lvl3 {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.7;
+}
+@property --focus-lvl4 {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.8;
+}
+
+/* Grid sizes */
+@property --grid-size-xxs {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 1px;
+}
+@property --grid-size-xs {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 4px;
+}
+@property --grid-size-sml {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 8px;
+}
+@property --grid-size-med {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 12px;
+}
+@property --grid-size-lrg {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 20px;
+}
+@property --grid-size-xl {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 24px;
+}@property --grid-size-xxl {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 32px;
+}
+
+/* Font sizes */
+@property --font-size-sml {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 10px;
+}
+@property --font-size-med {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 12px;
+}
+
+/* Font family */
+@property --font-family-base {
+  syntax: "<custom-ident>";
+  inherits: false;
+  initial-value: Roboto;
+}

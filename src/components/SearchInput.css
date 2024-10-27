@@ -1,2 +1,27 @@
 .SearchInput {
+    border-radius: 3px;
+    border-style: unset;
+    background-color: color-mix(in srgb, var(--base-light1), transparent 98%);
+
+    background-image: url("../icons/search_16px.svg");
+    background-position: var(--grid-size-xs) center;
+    background-repeat: no-repeat;
+
+    width: 220px;
+    height: var(--grid-size-xxl);
+    padding-top: var(--grid-size-xs);
+    padding-bottom: var(--grid-size-xs);
+    padding-left: calc(var(--grid-size-xs) + var(--grid-size-lrg) + var(--grid-size-sml));
+
+    font-size: var(--font-size-med);
+    font-weight: normal;
+    color: var(--base-light1);
+    opacity: var(--focus-lvl1);
+}
+
+input::placeholder {
+    font-size: var(--font-size-med);
+    font-weight: normal;
+    color: var(--base-light1);
+    opacity: var(--focus-lvl1);
 }

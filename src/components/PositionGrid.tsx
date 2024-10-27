@@ -11,18 +11,22 @@ export function PositionGrid(props: PositionGridProps): JSX.Element | null {
   return (
     <table className="PositionGrid">
       <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Name</th>
-          <th>Exposure</th>
+        <tr className="Header">
+          <th className="TickerColumn">Ticker</th>
+          <th className="NameColumn">Name</th>
+          <th className="ExposureColumn">Exposure</th>
         </tr>
       </thead>
       <tbody>
         {positions.map((position) => (
-          <tr key={position.id}>
-            <td>{position.ticker}</td>
-            <td>{position.name}</td>
-            <td>{position.exposure}</td>
+          <tr key={position.id} className="TableRows">
+            <td className="TickerContent TickerColumn">{position.ticker}</td>
+            <td className="NameContent NameColumn">{position.name}</td>
+            <td
+              className={`ExposureContent ExposureColumn ${position.exposure >= 0 ? 'Positive' : 'Negative'}`}
+            >
+              {position.exposure}
+            </td>
           </tr>
         ))}
       </tbody>

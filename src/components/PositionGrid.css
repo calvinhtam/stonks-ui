@@ -1,2 +1,70 @@
 .PositionGrid {
+    margin-top: var(--grid-size-med);
+    margin-left: var(--grid-size-med);
+
+    text-align: left;
+    font-family: var(--font-family-base);
+    font-weight: normal;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    .Header {
+        font-size: var(--font-size-sml);
+        color: var(--base-light1);
+        opacity: var(--focus-lvl2);
+        height: calc(28px + var(--grid-size-xxs));
+    }
+
+    .TableRows {
+        height: calc(23px + var(--grid-size-xxs) + var(--grid-size-xxs));
+        font-size: var(--font-size-med);
+    }
+
+    .TickerColumn {
+        padding-left: var(--grid-size-sml);
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 35px;
+    }
+
+    .NameColumn {
+        padding: 0;
+    }
+
+    .ExposureColumn {
+        padding: 0;
+        width: 60px;
+        text-align: right;
+    }
+
+    .TickerContent {
+        color: var(--base-light1);
+        opacity: var(--focus-lvl4);
+    }
+
+    .NameContent {
+        color: var(--base-grey1);
+        opacity: var(--focus-lvl3);
+    }
+
+    .ExposureContent {
+        opacity: var(--focus-lvl4);
+    }
+
+    .Positive {
+        color: var(--base-blue1);
+    }
+
+    .Negative {
+        color: var(--base-orange1);
+    }
+
+    .TickerColumn,
+    .NameColumn,
+    .ExposureColumn {
+        padding-right: var(--grid-size-med);
+        border-bottom: var(--grid-size-xxs) solid  var(--base-dark2);
+        box-shadow: 0 var(--grid-size-xxs) 0 var(--base-light2);
+    }
 }

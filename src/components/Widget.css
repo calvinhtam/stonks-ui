@@ -1,2 +1,4 @@
 .Widget {
+    background-color: var(--base-dark1);
+    padding: var(--grid-size-lrg);
 }
