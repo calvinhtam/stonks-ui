@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Position } from '../types';
 import { PositionGrid } from './PositionGrid';
 import { SearchInput } from './SearchInput';
@@ -9,11 +10,11 @@ export interface WidgetProps {
 }
 
 export function Widget(props: WidgetProps): JSX.Element | null {
-  const { positions } = props;
+  const [filteredPositions, setFilteredPositions] = React.useState(props.positions);
   return (
     <div className="Widget">
-      <SearchInput />
-      <PositionGrid positions={positions} />
+      <SearchInput positions={props.positions} setFilteredPositions={setFilteredPositions} />
+      <PositionGrid positions={filteredPositions} />
     </div>
   );
 }
